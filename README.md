@@ -1,1 +1,110 @@
-# Networkwalks-OLAGUNJU-OLAKIITAN-ESTHER-B083-WK03-PM1-PM2-PASSWORDS-CRACKING
+# Week 3A Project | PDF Password Recovery Using Password Cracking Techniques
+
+This hands-on project, completed as part of my Week 3A internship at Networkwalks, focused on recovering the password of a secured PDF document. The exercise involved exploring two password-cracking approaches: using John the Ripper (JTR) and its Johnny graphical interface on a Windows PC, and Hash Calculator and Password Cracker tools provided by Networkwalks on kali linux.
+
+<p>
+  <img src="https://shields.io" alt="Cybersecurity">
+  <img src="https://shields.io" alt="Password Recovery">
+  <img src="https://shields.io" alt="Hash Extraction">
+  <img src="https://shields.io" alt="Ethical Hacking">
+  <br>
+  <img src="https://shields.io" alt="Kali Linux 2026.2">
+  <img src="https://shields.io" alt="Windows 11 Pro">
+  <img src="https://shields.io" alt="JTR">
+  <img src="https://shields.io" alt="Johnny GUI">
+  <img src="https://shields.io" alt="Networkwalks Tools">
+  <br>
+  <img src="https://shields.io" alt="Author">
+</p>
+
+## :pushpin: About This Project
+
+As part of my Week 3A Cybersecurity internship at Networkwalks, I carried out a hands-on exercise involving the recovery of a password-protected PDF file (My Locked PDF1.pdf). The project introduced me to different password recovery techniques using John the Ripper (JTR) and Johnny GUI on my Windows PC. I also explored HashCrack.com and Networkwalks' Hash Calculator and Password Cracker tools.
+
+The same secured PDF document was used throughout the exercise to test different recovery methods. I explored offline password cracking with John the Ripper and Johnny GUI, alongside web-based techniques using HashCrack.com and Networkwalks' online tools. This practical session helped me develop a better understanding of PDF hash extraction, password recovery processes, and the application of password-cracking tools in cybersecurity.
+
+## :warning: Liability Disclaimer
+
+This project was conducted solely for learning and practical training as part of my Cybersecurity internship at Networkwalks. The PDF document used in the exercise was provided specifically for password recovery practice. I recognize that attempting to access protected files or systems without the owner's authorization may breach privacy and applicable laws. Any future use of the techniques and skills gained from this exercise will be restricted to ethical, lawful, and properly authorized activities.
+
+---
+
+## :wrench: TOOL USED
+
+| Tool Used | Link | Purpose |
+| :--- | :--- | :--- |
+| John the Ripper | https://ibiblio.org | Cracks password hashes to recover passwords. |
+| Johnny GUI | https://openwall.info | Provides a graphical interface for running John the Ripper. |
+| Pdf Hash Extractor | https://onlinehashcrack.com | Extracts password hashes from protected PDF files for cracking. |
+| Networkwalks Hash Calculator | https://networkwalks.com | Calculates and identifies hash values for password analysis. |
+| Password cracker tools | https://networkwalks.com | Attempts to recover passwords using extracted hashes. |
+
+---
+
+## :computer: 4.1 Password Cracking with John the Ripper (JTR) – W03-PM1
+
+As part of the Week 3 cybersecurity practical activities, I performed a password recovery exercise on a password-protected PDF document named “My Locked PDF1.pdf.” The exercise was carried out on a Windows PC using John the Ripper (JTR) and its graphical user interface, Johnny. The objective was to understand how password hashes can be extracted from protected files and processed using password-cracking tools in an authorized laboratory environment.
+
+### Step 1: Downloading John the Ripper and Johnny
+I downloaded the John the Ripper (JTR) package and the Johnny GUI from the provided Google Drive resource.
+<!-- Drag and drop image here: Downloaded JTR and Johnny files -->
+
+### Step 2: Installing Johnny
+I ran the setup file and followed the installation process to install the Johnny graphical interface on my Windows PC.
+<!-- Drag and drop image here: Johnny installation process -->
+
+### Step 3: Launching Johnny
+After completing the installation, I opened Johnny to begin configuring the password recovery exercise.
+<!-- Drag and drop image here: Johnny interface -->
+
+### Step 4: Configuring the John Executable
+I opened the Settings section in Johnny and browsed to the location of the john.exe file. I selected the executable so that Johnny could use the John the Ripper engine for the password recovery process.
+<!-- Drag and drop image here: Selecting john.exe in Johnny settings -->
+
+### Step 5: Preparing the Protected PDF
+I downloaded the encrypted PDF document, “My Locked PDF1.pdf,” to my Windows PC so that it could be used for the practical exercise.
+<!-- Drag and drop image here: Password-protected PDF file -->
+
+### Step 6: Extracting the PDF Hash
+I used the designated hash-processing website to upload the protected PDF and obtain the corresponding password hash required for the recovery process.
+<!-- Drag and drop image here: Uploading the PDF to obtain its hash -->
+
+### Step 7: Saving the Hash
+I copied the generated hash output and pasted it into a Notepad file. I saved the file as “hash1.txt” so that it could be loaded into Johnny for processing.
+<!-- Drag and drop image here: Hash saved as hash1.txt -->
+
+### Step 8: Loading the Password File into Johnny
+I reopened Johnny and selected the “Open Passwords File” option to load the hash file generated in the previous step.
+<!-- Drag and drop image here: Opening the password/hash file in Johnny -->
+
+### Step 9: Selecting the Hash File
+I browsed to the location where hash1.txt was saved, selected the file, and clicked Open to load it into Johnny.
+<!-- Drag and drop image here: Selecting hash1.txt -->
+
+### Step 10: Starting the Password Recovery Process
+After loading the hash file successfully, I selected “Start New Attack” to begin the password recovery process using John the Ripper.
+<!-- Drag and drop image here: Starting the password recovery attack -->
+
+### Step 11: Successful Password Recovery
+John the Ripper successfully recovered the password associated with the protected PDF file. This exercise provided practical experience in understanding how password-protected files can be analyzed using password hashes and how JTR can be used for authorized password recovery and security testing.
+<!-- Drag and drop image here: Successfully recovered PDF password -->
+
+### Step 12: Opening the PDF with the Recovered Password
+I used the recovered password to open the previously protected PDF file successfully. This confirmed that the password recovery process was completed successfully and that the recovered password was valid.
+<!-- Drag and drop image here: Successfully opened PDF using the recovered password -->
+
+---
+
+## :globe_with_meridians: 4.2 Password Cracking with Networkwalks Tools
+
+I performed a password recovery exercise on an encrypted PDF file (My Locked PDF-1.pdf) using the Networkwalks Hash Calculator and Password Cracker tools on my Kali Linux system. Since both tools are web-based, I accessed them through a web browser.
+
+### Activities Performed
+
+* **Step 1: Downloading the Encrypted PDF File** — I downloaded the password-protected PDF file (My Locked PDF-1.pdf) to my laptop.
+* **Step 2: Accessing the Networkwalks Hash Calculator** — I opened the Networkwalks Hash Calculator in my web browser.
+* **Step 3: Generating the PDF Hash** — I uploaded the encrypted PDF file to the Hash Calculator. The tool processed the file and generated a hash value beginning with `$pdf$`.
+* **Step 4: Submitting the Hash for Password Cracking** — I copied the complete hash value generated by the Hash Calculator and pasted it into the Networkwalks Password Cracker tool.
+* **Step 5: Executing the Password Cracking Process** — I initiated the password-cracking attack. After the process was completed, the recovered password was displayed on the screen.
+* **Step 6: Verifying the Recovered Password** — I used the recovered password to open the previously locked PDF file and confirmed that the document was accessible.
+* **Step 7: Lab Completion** — I successfully completed the lab exercise by recovering the PDF password and gaining access to the protected document.
