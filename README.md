@@ -145,3 +145,28 @@ I initiated the password-cracking attack. After the process was completed, the r
   
 * **Step 7: Lab Completion**
   I successfully completed the lab exercise by recovering the PDF password and gaining access to the protected document.
+
+---
+
+## :bar_chart: Risk Analysis & Impact Matrix
+
+| Finding | Evidence (From Lab Activities) | Potential Impact |
+| :--- | :--- | :--- |
+| **Weak PDF Encryption / Simple Passwords** | John the Ripper (JTR) and Johnny GUI successfully recovered the file password. Networkwalks' web tools also quickly cracked the hash. | Unauthorized actors can rapidly bypass document locks, compromising data confidentiality. |
+| **Trivial Hash Extraction** | The PDF hash was effortlessly extracted using a basic web browser and a public, designated hash-processing website. | Attackers do not need advanced technical exploits; anyone can isolate a file's security signature to initiate an offline attack. |
+| **Availability of Web-Based Cracking Tools** | Networkwalks and HashCrack.com provide free, easily accessible web interfaces to calculate and crack security hashes. | Minimizes the barrier to entry for malicious actors, eliminating the need to install specialized operating systems like Kali Linux. |
+| **Exposure of Offline Data Signatures** | Hashes were copied, saved locally into plain text files (`hash1.txt`), and processed entirely offline. | Attackers can run infinite brute-force variants locally without alerting the file owners or triggering account lockouts. |
+
+---
+
+## :bulb: Recommendations
+
+* **Enforce Strong Password Policies:** Implement long, complex, and unique alphanumeric passphrases for all corporate and sensitive personal PDF documents to withstand dictionary or automated brute-force attempts.
+* **Transition to Advanced Encryption Standards:** Move away from basic legacy PDF password restrictions. Utilize modern, corporate-grade encryption standards (such as AES-256) which dramatically increase the computational effort required to process extracted hashes.
+* **Deploy Secure Content Delivery Platforms:** For high-stakes data, avoid distributing raw encrypted files over open channels. Instead, use secure document management repositories that leverage Multi-Factor Authentication (MFA) and granular, user-revocable access privileges.
+
+---
+
+## :checkered_flag: Conclusion
+
+The hands-on exercises conducted during this internship project successfully demonstrate how easily password-protected PDFs can be compromised using standard penetration testing tools. By leveraging either offline frameworks (John the Ripper and Johnny GUI) or open web-based calculators, a security analyst—or an attacker—can systematically isolate a document's hash value and recover the plain-text password. Ultimately, static PDF password locks represent a low security barrier that should not be relied upon to safeguard high-value, highly confidential data without additional layered enterprise defenses.
