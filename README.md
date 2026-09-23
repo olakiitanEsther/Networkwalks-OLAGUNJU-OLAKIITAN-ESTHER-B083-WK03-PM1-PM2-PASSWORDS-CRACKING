@@ -171,11 +171,7 @@ I initiated the password-cracking attack. After the process was completed, the r
 
 The hands-on exercises conducted during this internship project successfully demonstrate how easily password-protected PDFs can be compromised using standard penetration testing tools. By leveraging either offline frameworks (John the Ripper and Johnny GUI) or open web-based calculators, a security analyst—or an attacker—can systematically isolate a document's hash value and recover the plain-text password. Ultimately, static PDF password locks represent a low security barrier that should not be relied upon to safeguard high-value, highly confidential data without additional layered enterprise defenses.
 
-## :bust_in_silhouette: Author
-
-Olakiitan Esther — Cybersecurity Intern B083 LinkedIn: [linkedin.com/in/olagunju-olakiitan]
-
-
-## :pushpin: Project Information
-
-Program Name: Cybersecurity Program at Networkwalks | Week: 03 | Repository: GitHub
+##  Project Details
+* **Program:** Cybersecurity at Networkwalks (Week 03)
+* **Author:** Olagunju Olakiitan Esther
+* **LinkedIn:** www.linkedin.com/in/olagunju-olakiitan
