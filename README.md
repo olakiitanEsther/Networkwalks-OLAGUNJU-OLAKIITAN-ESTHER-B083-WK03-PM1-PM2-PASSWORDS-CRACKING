@@ -1,21 +1,13 @@
 # Week 3 Project | PDF Password Recovery Using Password Cracking Techniques
 
-This hands-on project, completed as part of my Week 3 internship at Networkwalks, focused on recovering the password of a secured PDF document. The exercise involved exploring two password-cracking approaches: using John the Ripper (JTR) and its Johnny graphical interface on a Windows PC, and Hash Calculator and Password Cracker tools provided by Networkwalks on kali linux.
+This hands-on project, completed as part of my Week 3A internship at Networkwalks, focused on recovering the password of a secured PDF document. The exercise involved exploring two password-cracking approaches: using John the Ripper (JTR) and its Johnny graphical interface on a Windows PC, and Hash Calculator and Password Cracker tools provided by Networkwalks on kali linux.
 
-<p>
-  <img src="https://shields.io" alt="Cybersecurity">
-  <img src="https://shields.io" alt="Password Recovery">
-  <img src="https://shields.io" alt="Hash Extraction">
-  <img src="https://shields.io" alt="Ethical Hacking">
-  <br>
-  <img src="https://shields.io" alt="Kali Linux 2026.2">
-  <img src="https://shields.io" alt="Windows 11 Pro">
-  <img src="https://shields.io" alt="JTR">
-  <img src="https://shields.io" alt="Johnny GUI">
-  <img src="https://shields.io" alt="Networkwalks Tools">
-  <br>
-  <img src="https://shields.io" alt="Author">
-</p>
+### Skills & Tools Covered
+* **Skills:** Cybersecurity, Password Recovery, Hash Extraction, Ethical Hacking
+* **Operating Systems:** Kali Linux 2026.2, Windows 11 Pro
+* **Tools Used:** John the Ripper (JTR), Johnny GUI, Networkwalks Online Tools
+* **Author:** Olakiitan Esther
+
 
 ## :pushpin: About This Project
 
